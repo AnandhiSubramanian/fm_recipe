@@ -1,0 +1,99 @@
+$primary-color-nutmeg: hsl(14, 45%, 36%);
+$primary-color-raspberry: hsl(332, 51%, 32%);
+
+$sec-color-white: hsl(0, 0%, 100%);
+$sec-color-rose-white: hsl(330, 100%, 98%);
+$sec-color-eggshell: hsl(30, 54%, 90%);
+$sec-color-light-grey: hsl(30, 18%, 87%);
+$sec-color-brown: hsl(30, 10%, 34%);
+$sec-color-charcoal: hsl(24, 5%, 18%);
+
+.card {
+  display: grid;
+  width: 35%;
+  margin: auto;
+  color: $sec-color-brown;
+  font-size: 16px;
+}
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.outfit-font-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.recipe-grid {
+  display: grid;
+  place-self: center;
+  padding: 5%;
+  background-color: $sec-color-white;
+  border-radius: 8px;
+  grid-template-rows: repeat (auto-fit, minmax(1fr, 4fr));
+}
+
+.recipe-name {
+  color: $sec-color-charcoal;
+}
+
+body {
+  background-color: $sec-color-eggshell;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.preperation-time {
+  background-color: $sec-color-rose-white;
+  padding: 2%;
+  h4,
+  li::marker {
+    color: $primary-color-raspberry;
+  }
+}
+
+.ingredients,
+.instructions {
+  border-bottom: 1px solid $sec-color-light-grey;
+}
+.details h3 {
+  color: $primary-color-nutmeg;
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.item-value {
+  color: $primary-color-nutmeg;
+  font-weight: 700;
+}
+.details li::marker {
+  color: $primary-color-nutmeg;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(4, 25%);
+  .item {
+    padding: 0.5rem 0;
+    border-bottom: 0.5px solid $sec-color-light-grey;
+    align-self: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+  }
+}

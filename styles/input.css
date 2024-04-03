@@ -1,0 +1,90 @@
+.card {
+  display: grid;
+  width: 35%;
+  margin: auto;
+  color: hsl(30, 10%, 34%);
+  font-size: 16px;
+}
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.outfit-font-regular {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.recipe-grid {
+  display: grid;
+  place-self: center;
+  padding: 5%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 8px;
+  grid-template-rows: repeat auto-fit, minmax(1fr, 4fr);
+}
+
+.recipe-name {
+  color: hsl(24, 5%, 18%);
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.preperation-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 2%;
+}
+.preperation-time h4,
+.preperation-time li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.ingredients,
+.instructions {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.details h3 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.item-value {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.details li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(4, 25%);
+}
+.nutrition-grid .item {
+  padding: 0.5rem 0;
+  border-bottom: 0.5px solid hsl(30, 18%, 87%);
+  align-self: center;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+  }
+}/*# sourceMappingURL=input.css.map */
